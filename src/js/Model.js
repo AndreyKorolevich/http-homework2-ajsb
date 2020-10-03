@@ -5,12 +5,12 @@ export default class Model {
 
   /* eslint-disable */
   async getAll() {
-    const tikets = await fetch('http://localhost:7090/?method=allTickets');
+    const tikets = await fetch('https://http-homework-backend.herokuapp.com/?method=allTickets');
     return tikets.json();
   }
 
   async save(product) {
-    await fetch('http://localhost:7090', {
+    await fetch('https://http-homework-backend.herokuapp.com/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -20,18 +20,18 @@ export default class Model {
   }
 
   async delete(id) {
-    await fetch(`http://localhost:7090?id=${id}`, {
+    await fetch(`https://http-homework-backend.herokuapp.com/?id=${id}`, {
       method: 'DELETE',
     });
   }
 
   async find(id) {
-    const tikets = await fetch(`http://localhost:7090/?method=ticketById&id=${id}`);
+    const tikets = await fetch(`https://http-homework-backend.herokuapp.com/?method=ticketById&id=${id}`);
     return tikets.json();
   }
 
   async update(product) {
-    await fetch('http://localhost:7090', {
+    await fetch('https://http-homework-backend.herokuapp.com/', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export default class Model {
   }
 
   async status(id) {
-    await fetch('http://localhost:7090', {
+    await fetch('https://http-homework-backend.herokuapp.com/', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ export default class Model {
   }
 
   async checkDescription(id) {
-    await fetch('http://localhost:7090', {
+    await fetch('https://http-homework-backend.herokuapp.com/', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
