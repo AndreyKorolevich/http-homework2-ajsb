@@ -1,0 +1,95 @@
+#root{
+  position: relative;
+}
+.products {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border: solid 1px black;
+  margin-top: 30px;
+  padding: 15px;
+  padding-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table {
+  width: 100%;
+}
+
+thead th:nth-child(1),thead  th:nth-child(4){
+  width: 80px;
+}
+
+thead th:nth-child(3){
+  width: 200px;
+}
+
+tbody tr th:nth-child(3){
+  font-size: 12px;
+}
+
+.th-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.action {
+  margin-right: 10px;
+}
+
+.container-form {
+  position: absolute;
+  top: 17px;
+  border: solid 1px black;
+  width: 470px;
+  height: 200px;
+  background: azure;
+  padding: 15px;
+}
+
+.name, .cost {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name label, .cost label {
+  width: 100%;
+}
+
+#form {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#form div {
+  margin-bottom: 35px;
+}
+
+
+.form-error {
+  position: absolute;
+  padding: 5px 10px;
+  width: 150px;
+  background: #fff;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  border: solid 1px burlywood;
+}
+
+.action-update {
+  margin-right: 15px;
+}
+
+.action-check, .action-update, .action-delete {
+  cursor: pointer;
+}
+
+.th-description {
+  font-style: italic;
+}
